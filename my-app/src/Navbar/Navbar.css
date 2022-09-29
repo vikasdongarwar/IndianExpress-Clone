@@ -1,0 +1,12 @@
+.navbar{
+    border: 1px solid red;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.navbar>div{
+    border: 1px solid green;
+}
+.navmenu{
+    display: flex;
+}
