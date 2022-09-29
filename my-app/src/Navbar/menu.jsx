@@ -27,7 +27,7 @@ const NavMenu=()=>{
       Open Closed Tab
     </MenuItem>
     <MenuItem icon={<CloseIcon />} command='⌘O'>
-      Open File...
+      Open File
     </MenuItem>
   </MenuList>
 </Menu>
