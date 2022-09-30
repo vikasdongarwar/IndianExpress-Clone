@@ -1,0 +1,8 @@
+.mainbox{
+    display: flex;
+}
+.mainNewsBox{
+    border: 1px solid red;
+    width: 80%;
+    height: vh;
+}

@@ -1,12 +1,17 @@
 .navbar{
-    border: 1px solid red;
+    padding: 10px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
-.navbar>div{
-    border: 1px solid green;
-}
-.navmenu{
+.leftnavmenu{
     display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.trending{
+    margin-bottom: 10px;
+}
+.trending>button{
+    background-color: #efefef;
 }
