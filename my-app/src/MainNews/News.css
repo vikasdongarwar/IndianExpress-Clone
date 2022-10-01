@@ -1,8 +1,64 @@
 .mainbox{
     display: flex;
+    margin-top: 20px;
 }
 .mainNewsBox{
     border: 1px solid red;
     width: 80%;
-    height: vh;
+    height: auto;
+}
+
+.NB1{
+    border: 1px solid lightgrey;
+    height: auto;
+    margin: 20px ;
+}
+
+.mapNews1{
+    display: flex;
+    gap: 30px;
+    /* border: 1px solid lightgrey; */
+    padding: 20px;
+    margin: 10px;
+}
+.mapNews1>div>b:nth-child(1){
+    display: flex;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+.mapNews1>div>b:nth-child(1):hover{
+    color: brown;
+}
+.mapNews1>div>b:nth-child(2){
+    font-family:sans-serif;
+    font-size: 18px;
+}
+.mapNews2{
+    display: flex;
+    gap: 30px;
+    margin: 10px;
+}
+.mapNews2>p{
+    border: 1px solid rgb(211, 205, 205);
+    padding: 5px;
+    font-family:sans-serif;
+    cursor: pointer;
+}
+.mapNews2>p:hover{
+    color: brown;
+}
+
+.newsbox2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10px;
+    margin: 10px;
+    height: auto;
+}
+.newsbox2>div{
+    display: grid;
+    width: 100%;
+    height: auto;
 }

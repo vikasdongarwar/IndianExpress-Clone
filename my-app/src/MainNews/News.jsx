@@ -1,12 +1,17 @@
 import "./News.css"
+import NewsBox1 from "./Newsbox1";
+import NewsBox2 from "./NewsBox2";
 
 const News=()=>{
     return (
         <>
         <div className="mainbox">
-            <img src="https://tpc.googlesyndication.com/simgad/2008244019372313769" alt="advertise" />
-            <div className="mainNewsBox">News</div>
-            <img src="https://tpc.googlesyndication.com/simgad/786124683015229389" alt="advertise" />
+            <img style={{height:"700px"}} src="https://tpc.googlesyndication.com/simgad/2008244019372313769" alt="advertise" />
+            <div className="mainNewsBox">
+                <NewsBox1/>
+                <NewsBox2/>
+            </div>
+            <img style={{height:"700px"}} src="https://tpc.googlesyndication.com/simgad/786124683015229389" alt="advertise" />
         </div>
         </>
     )
