@@ -1,0 +1,14 @@
+.footer{
+    /* border: 1px solid red; */
+    background-color: black;
+    width: 100%;
+    height: auto;
+}
+.footer>.grid{
+    margin:20px auto;
+    /* border: 1px solid green; */
+    color: aliceblue;
+}
+/* .footer>.grid>GridItem{
+    display: flex;
+} */

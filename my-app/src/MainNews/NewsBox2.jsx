@@ -7,36 +7,56 @@ const NewsBox2=()=>{
     const [latestNews,setLatestNews]=React.useState([]);
     
 
-    const data=["What the new Monetary Policy Committee rate hike indicates",
-                "The RBI's playbook: Further interest rate hikes are expected, albeit more calibrated",
-                "Swachh Bharat 2.0: Moving forward together",
-                "Why MS Dhoni doesn't carry his phone and what we can learn from him",
-                "What the new Monetary Policy Committee rate hike indicates",
-                "The RBI's playbook: Further interest rate hikes are expected, albeit more calibrated",
-                "Swachh Bharat 2.0: Moving forward together",
-                "Why MS Dhoni doesn't carry his phone and what we can learn from him",
-                "What the new Monetary Policy Committee rate hike indicates",
-                "The RBI's playbook: Further interest rate hikes are expected, albeit more calibrated",
-                "Swachh Bharat 2.0: Moving forward together",
-                "Why MS Dhoni doesn't carry his phone and what we can learn from him",
-                "What the new Monetary Policy Committee rate hike indicates",
-                "The RBI's playbook: Further interest rate hikes are expected, albeit more calibrated",
-                "Swachh Bharat 2.0: Moving forward together",
-                "Why MS Dhoni doesn't carry his phone and what we can learn from him",
-                "What the new Monetary Policy Committee rate hike indicates",
-                "The RBI's playbook: Further interest rate hikes are expected, albeit more calibrated",
-                "Swachh Bharat 2.0: Moving forward together",
-                "Why MS Dhoni doesn't carry his phone and what we can learn from him",
-                "Why MS Dhoni doesn't carry his phone and what we can learn from him",
-                "What the new Monetary Policy Committee rate hike indicates",
-                "The RBI's playbook: Further interest rate hikes are expected, albeit more calibrated",
-                "Swachh Bharat 2.0: Moving forward together",
-                "Why MS Dhoni doesn't carry his phone and what we can learn from him",
-                "Why MS Dhoni doesn't carry his phone and what we can learn from him",
-                "What the new Monetary Policy Committee rate hike indicates",
-                "The RBI's playbook: Further interest rate hikes are expected, albeit more calibrated",
-                "Swachh Bharat 2.0: Moving forward together",
-                "Why MS Dhoni doesn't carry his phone and what we can learn from him"
+    const data=[{title:"What the new Monetary Policy Committee rate hike indicates",
+                 image:"https://images.indianexpress.com/2019/08/sugatha.jpg?w=210"},
+                {title:"The RBI's playbook: Further interest rate hikes are expected, albeit more calibrated",
+                 image:"https://images.indianexpress.com/2015/08/untitled-5.jpg?w=210"},
+                {title:"Swachh Bharat 2.0: Moving forward together",
+                 image:"https://images.indianexpress.com/2020/04/sc-1.jpg?w=210"},
+                {title:"Why MS Dhoni doesn't carry his phone and what we can learn from him",
+                image:"https://images.indianexpress.com/2014/08/faizan-mustafa.jpg?w=210"},
+                {title:"What the new Monetary Policy Committee rate hike indicates",
+                image:"https://images.indianexpress.com/2022/05/deepika-oped.jpg?w=210"},
+                {title:"What the new Monetary Policy Committee rate hike indicates",
+                 image:"https://images.indianexpress.com/2019/08/sugatha.jpg?w=210"},
+                {title:"The RBI's playbook: Further interest rate hikes are expected, albeit more calibrated",
+                 image:"https://images.indianexpress.com/2015/08/untitled-5.jpg?w=210"},
+                {title:"Swachh Bharat 2.0: Moving forward together",
+                 image:"https://images.indianexpress.com/2020/04/sc-1.jpg?w=210"},
+                {title:"Why MS Dhoni doesn't carry his phone and what we can learn from him",
+                image:"https://images.indianexpress.com/2014/08/faizan-mustafa.jpg?w=210"},
+                {title:"What the new Monetary Policy Committee rate hike indicates",
+                image:"https://images.indianexpress.com/2022/05/deepika-oped.jpg?w=210"},
+                {title:"What the new Monetary Policy Committee rate hike indicates",
+                 image:"https://images.indianexpress.com/2019/08/sugatha.jpg?w=210"},
+                {title:"The RBI's playbook: Further interest rate hikes are expected, albeit more calibrated",
+                 image:"https://images.indianexpress.com/2015/08/untitled-5.jpg?w=210"},
+                {title:"Swachh Bharat 2.0: Moving forward together",
+                 image:"https://images.indianexpress.com/2020/04/sc-1.jpg?w=210"},
+                {title:"Why MS Dhoni doesn't carry his phone and what we can learn from him",
+                image:"https://images.indianexpress.com/2014/08/faizan-mustafa.jpg?w=210"},
+                {title:"What the new Monetary Policy Committee rate hike indicates",
+                image:"https://images.indianexpress.com/2022/05/deepika-oped.jpg?w=210"},
+                {title:"What the new Monetary Policy Committee rate hike indicates",
+                 image:"https://images.indianexpress.com/2019/08/sugatha.jpg?w=210"},
+                {title:"The RBI's playbook: Further interest rate hikes are expected, albeit more calibrated",
+                 image:"https://images.indianexpress.com/2015/08/untitled-5.jpg?w=210"},
+                {title:"Swachh Bharat 2.0: Moving forward together",
+                 image:"https://images.indianexpress.com/2020/04/sc-1.jpg?w=210"},
+                {title:"Why MS Dhoni doesn't carry his phone and what we can learn from him",
+                image:"https://images.indianexpress.com/2014/08/faizan-mustafa.jpg?w=210"},
+                {title:"What the new Monetary Policy Committee rate hike indicates",
+                image:"https://images.indianexpress.com/2022/05/deepika-oped.jpg?w=210"},
+                {title:"What the new Monetary Policy Committee rate hike indicates",
+                 image:"https://images.indianexpress.com/2019/08/sugatha.jpg?w=210"},
+                {title:"The RBI's playbook: Further interest rate hikes are expected, albeit more calibrated",
+                 image:"https://images.indianexpress.com/2015/08/untitled-5.jpg?w=210"},
+                {title:"Swachh Bharat 2.0: Moving forward together",
+                 image:"https://images.indianexpress.com/2020/04/sc-1.jpg?w=210"},
+                {title:"Why MS Dhoni doesn't carry his phone and what we can learn from him",
+                image:"https://images.indianexpress.com/2014/08/faizan-mustafa.jpg?w=210"},
+                {title:"What the new Monetary Policy Committee rate hike indicates",
+                image:"https://images.indianexpress.com/2022/05/deepika-oped.jpg?w=210"},
                 ]
 
     const getData=(cont)=>{
@@ -78,9 +98,11 @@ const NewsBox2=()=>{
             </div>
             <div>
                 <b style={{fontSize:"20px"}}>THE EXPRESS VIEW</b>
+                <b>OPINION</b>
                     {data?.map((ele)=>(
                         <div style={{border:"1px dotted", display:"flex", gap:"10px",width:"100%",padding:"10px"}}>
-                            <b style={{width:"90%", fontSize:"14px"}}>{ele}</b>
+                            <b style={{width:"90%", fontSize:"14px"}}>{ele.title}</b>
+                            <img style={{width:"60px",height:"60px",borderRadius:"100%"}} src={ele.image} alt="Image" />
                         </div>
                     ))}
                 </div>

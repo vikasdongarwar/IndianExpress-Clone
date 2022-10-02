@@ -1,4 +1,5 @@
 import './App.css';
+import Footer from './Footer/Footer';
 import News from './MainNews/News';
 import Navbar from './Navbar/Navbar';
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <News/>
+      <Footer/>
     </div>
   );
 }
