@@ -1,10 +1,11 @@
 import "./News.css";
 
 const MapingNews=({data})=>{
+    console.log("data:-",data[0].urlToImage)
     return (
         <>
         <div className="mapNews1">
-            <img style={{width:"400px"}} src={data[0].image_url} alt="err" />
+            <img style={{width:"400px"}} src={data[0].urlToImage} alt="err" />
             <div style={{display:"flex", flexDirection:"column"}}>
                 <b>{data[0].title}</b>
                 <b>{data[0].description}</b>
