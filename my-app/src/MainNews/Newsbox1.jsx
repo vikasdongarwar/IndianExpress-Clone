@@ -6,7 +6,7 @@ const NewsBox1=()=>{
     const [data,setData]=React.useState(false);
 
     const getData=()=>{  
-        fetch('https://newsapi.org/v2/top-headlines?country=in&apiKey=f1c86b397f6c47d0ab27f4bcae30490b ')
+        fetch('https://newsapi.org/v2/top-headlines?domains=indianexpress.com&country=in&pageSize=10&apiKey=f1c86b397f6c47d0ab27f4bcae30490b ')
             .then((response) => response.json())
             .then((res)=> setData(res.articles))
             .catch((err) => console.log("ERROR:----",err));     
@@ -17,7 +17,6 @@ const NewsBox1=()=>{
     },[])
 
     console.log(data)
-    console.log(typeof(data))
 
     return(
         <>

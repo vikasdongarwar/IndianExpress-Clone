@@ -15,3 +15,19 @@
 .trending>button{
     background-color: #efefef;
 }
+.optionsStrip{
+    cursor: pointer;
+}
+.optionsStrip>p:hover{
+    color: rgb(96, 17, 199);
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: -2px 2px -5px 2px;
+}
+.menuOptions b:hover{
+    color: rgb(27, 233, 20);
+    cursor: pointer;
+    border: 1px solid gray;
+    padding: 2px 10px;
+    border-radius: 5px;
+}

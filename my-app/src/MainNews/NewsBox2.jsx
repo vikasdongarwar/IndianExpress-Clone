@@ -80,7 +80,7 @@ const NewsBox2=()=>{
             <div>
                 <b style={{fontSize:"20px"}}>TOP NEWS</b>
                 {topData?.map((ele)=>(
-                    <div style={{border:"1px dotted", display:"flex", gap:"10px",width:"100%",padding:"10px"}}>
+                    <div key={ele.url} style={{border:"1px dotted", display:"flex", gap:"10px",width:"100%",padding:"10px"}}>
                         <b style={{width:"70%", fontSize:"14px"}}>{ele.title}</b>
                         <div style={{width:"35%"}}>
                             <img  src={ele.urlToImage} alt="err"/>
@@ -91,7 +91,7 @@ const NewsBox2=()=>{
             <div style={{backgroundColor:"#f2f2f2"}}>
                 <b style={{fontSize:"20px"}}>LATEST NEWS</b>
                 {latestNews?.map((ele)=>(
-                    <div style={{border:"1px dotted", display:"flex", gap:"10px",width:"100%",padding:"10px"}}>
+                    <div key={ele.title} style={{border:"1px dotted", display:"flex", gap:"10px",width:"100%",padding:"10px"}}>
                         <b style={{width:"90%", fontSize:"14px"}}>{ele.title}</b>
                     </div>
                 ))}
@@ -99,8 +99,8 @@ const NewsBox2=()=>{
             <div>
                 <b style={{fontSize:"20px"}}>THE EXPRESS VIEW</b>
                 <b>OPINION</b>
-                    {data?.map((ele)=>(
-                        <div style={{border:"1px dotted", display:"flex", gap:"10px",width:"100%",padding:"10px"}}>
+                    {data?.map((ele,index)=>(
+                        <div key={index} style={{border:"1px dotted", display:"flex", gap:"10px",width:"100%",padding:"10px"}}>
                             <b style={{width:"90%", fontSize:"14px"}}>{ele.title}</b>
                             <img style={{width:"60px",height:"60px",borderRadius:"100%"}} src={ele.image} alt="Image" />
                         </div>

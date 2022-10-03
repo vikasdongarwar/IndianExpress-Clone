@@ -1,6 +1,7 @@
-import { Grid, GridItem, IconButton, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
-import { AddIcon, HamburgerIcon, ExternalLinkIcon, RepeatIcon, EditIcon, CloseIcon, SearchIcon } from '@chakra-ui/icons'
+import { Grid, GridItem, IconButton, Menu, MenuButton, MenuList } from "@chakra-ui/react";
+import { HamburgerIcon, SearchIcon } from '@chakra-ui/icons'
 import React from "react";
+import "./Navbar.css"
 
 const NavMenu=()=>{ 
     return (
@@ -18,7 +19,7 @@ const NavMenu=()=>{
   <MenuList bg="#efefef" borderRadius="none" w="1280px">
         <hr style={{marginBottom:"3px"}}/>
         <hr />
-        <Grid templateColumns='repeat(6, 1fr)' gap={4} >
+        <Grid className="menuOptions" templateColumns='repeat(6, 1fr)' gap={4} >
             <GridItem w='100%' h='10'  ><b>e-paper</b></GridItem>
             <GridItem w='100%' h='10'  ><b>Opinion</b></GridItem>
             <GridItem w='100%' h='10'  ><b>Sports</b></GridItem>

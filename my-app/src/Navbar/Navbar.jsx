@@ -1,5 +1,5 @@
 import { CalendarIcon } from "@chakra-ui/icons";
-import { Button, Stack } from '@chakra-ui/react'
+import { Button, Stack } from '@chakra-ui/react';
 import {NavMenu,NDate} from "./menu";
 import "./Navbar.css"
 
@@ -32,8 +32,8 @@ const Navbar=()=>{
             </div>
         </div>
         <hr />
-        <div style={{display:"flex",gap:"30px",padding:"5px 20px"}}>
-           <div style={{display:"flex",justifyContent:"space-around",gap:"15px",fontSize:"14px"}}>
+        <div  style={{display:"flex",gap:"30px",padding:"5px 20px"}}>
+           <div className="optionsStrip" style={{display:"flex",justifyContent:"space-around",gap:"15px",fontSize:"14px"}}>
             <p>Home</p>
             <p>Explained</p>
             <p>Political Pulse</p>
@@ -41,7 +41,7 @@ const Navbar=()=>{
             <p>Cities</p>
             <p>Opinion</p>
             <p>Entertainment</p>
-            <p>Lifestyle</p>
+            <p>Lifestyle</p>    
             <p>Technology</p>
             <p>Videos</p>
             <p>Sports</p>
